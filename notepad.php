@@ -1,67 +1,31 @@
-body{
-	overflow-x: hidden;
-}
 
-.logo{
-	width: 100%;
-}
+<section class="homepage">
+	<div class="navigation">
+		<?php
+		wp_nav_menu( array(
+		  
+		  'theme_location'  => 'primary',                
+		  'container'     => 'ul',
+		  'menu_class'    => 'menu-ul'                
+		) );
+		?>
+	</div>
 
-.main-container{
-	width: 100%;
-	height: 100vh;
-}
+</section>
 
-.site-content{
-	width: 100%;
-	margin: 0;
-}
 
-.page .container{
-	max-width: 810px;
-}
+<ul>
+	<li class="nav custom-menu" id="my-id">
+		<a href="http://example.com">Page in question</a>
+	</li>
 
-.navigation{
-	height: 476px;
-	width: 800px;
-	margin: 30px auto;
-	position: relative;
-	right: 12px;
-}
 
-.custom-menu{
-	display: inline-block;
-}
 
-.custom-menu a{
-	display: inline-block;
-	text-transform: lowercase;
-	font-size: 22px;
-	text-align: center;
-	font-family: cursive;
-	padding-top: 20px;
-	text-decoration: none;
-	color: black;
-	margin-bottom: 20px;
-	margin-right: 15px;
-}
+</ul>
 
-.nav a{
-	height: 233.3px;
-	width: 233.3px;
-	transform: translateY(0);
-	transition: transform 0.25s;
-}
-
-.nav a:hover {
-	transform: translateY(-5px);
-	transition: transform 0.25s;
-}
-
-/* HOME PAGE MENU */
-
-.projects a  {
+<style>
+	.projects a  {
 	background: url(../img/indexMID.png) 0 0;	
-	/*background: green;*/
 }
 
 .sounds a{
@@ -83,8 +47,6 @@ body{
 .contact a{
 	background: url(../img/indexMID.png) -466.6px 233.3px;
 }
-
-/* Projects PAGE MENU */
 
 .hearing a  {
 	background: url(../img/projects.png) 0 0;	
@@ -110,8 +72,6 @@ body{
 	background: url(../img/projects.png) -466.6px 233.3px;
 }
 
-/* Contact PAGE MENU */
-
 .resume a  {
 	background: url(../img/info.png) 0 0;	
 }
@@ -135,3 +95,4 @@ body{
 .mail3 a{
 	background: url(../img/info.png) -466.6px 233.3px;
 }
+</style>

@@ -37,6 +37,10 @@ function dubline_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'dubline' ),
+		'projects' => esc_html__( 'Projects', 'dubline' ),
+		'sound' => esc_html__( 'Sound', 'dubline' ),
+		'contact' => esc_html__( 'Contact', 'dubline' ),
+		'test' => esc_html__( 'Test', 'dubline' ),
 	) );
 
 	/*

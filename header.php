@@ -25,12 +25,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="container main-container">
-	<header>
-		<!--<a href="<?php echo esc_url( home_url( '/' ) ); ?>"> <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.jpg" alt="logo" class="logo"> 
-	</a> -->
-	<?php get_template_part('content', 'menu'); ?>
-	</header>
+<div class="main-container">
+	
 
 
 	<div class="site-content">
