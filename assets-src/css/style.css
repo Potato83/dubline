@@ -1,12 +1,15 @@
 body{
 	overflow-x: hidden;
+	/*background: #000;*/
+}
+.padder{
+	width: 100%;
+	height: 20px;
 }
 
 /* compensate (for working) */
 
 .logged-in header {
-	/*background: red;*/
-	/*display: none;*/
 	margin-top: -32px;
 }
 
@@ -29,14 +32,11 @@ body{
 }
 
 .navigation{
-	/*min-height: 487px;*/
 	width: 755px;
 	margin: 30px auto 0;
 	position: relative;
-	/*right: 12px;*/
 	padding: 0;
 	box-sizing: border-box;
-	/*background: #da41ca;*/
 }
 
 .menu-ul{
@@ -52,9 +52,9 @@ body{
 .custom-menu a{
 	display: inline-block;
 	text-transform: lowercase;
-	font-size: 22px;
+	font-size: 28px;
 	text-align: center;
-	font-family: cursive;
+	font-family: 'Jim Nightshade', cursive;
 	padding-top: 20px;
 	text-decoration: none;
 	color: black;
@@ -73,6 +73,37 @@ body{
 .nav a:hover {
 	transform: translateY(-5px);
 	transition: transform 0.25s;
+}
+
+/* HEARING THERE */
+.page-thum{
+	text-align: center;
+	margin: 0 8% 30px;
+	position: relative;
+  width: 84%;
+  padding-bottom: 60%;
+  float: left;
+  height: 0;
+}
+
+.page-feat{
+	text-align: center;
+	margin: 0 8% 0;
+	position: relative;
+  width: 84%;
+  padding-bottom: 60%;
+  float: left;
+  height: 0;
+}
+
+.page-thum img,
+.page-feat img{
+	max-width: 100%;
+	max-height: 100%;
+	width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
 }
 
 @media screen and (min-width: 700px) and (max-width: 1300px) and (min-height: 600px) {
@@ -133,6 +164,14 @@ body{
 		width: 140px;
 	}
 }
+
+.custom-text > p{
+	font-size: 22px;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+
 
 
 
