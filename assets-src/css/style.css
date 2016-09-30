@@ -2,6 +2,14 @@ body{
 	overflow-x: hidden;
 }
 
+/* compensate (for working) */
+
+.logged-in header {
+	/*background: red;*/
+	/*display: none;*/
+	margin-top: -32px;
+}
+
 .logo{
 	width: 100%;
 }
@@ -21,11 +29,20 @@ body{
 }
 
 .navigation{
-	height: 476px;
-	width: 800px;
-	margin: 30px auto;
+	/*min-height: 487px;*/
+	width: 755px;
+	margin: 30px auto 0;
 	position: relative;
-	right: 12px;
+	/*right: 12px;*/
+	padding: 0;
+	box-sizing: border-box;
+	/*background: #da41ca;*/
+}
+
+.menu-ul{
+	text-indent: 0;
+	padding: 0;
+	margin: 0;
 }
 
 .custom-menu{
@@ -42,12 +59,13 @@ body{
 	text-decoration: none;
 	color: black;
 	margin-bottom: 20px;
-	margin-right: 15px;
+	margin-right: 8px;
+	margin-left: 8px;
 }
 
 .nav a{
-	height: 233.3px;
-	width: 233.3px;
+	height: 233px;
+	width: 233px;
 	transform: translateY(0);
 	transition: transform 0.25s;
 }
@@ -57,81 +75,64 @@ body{
 	transition: transform 0.25s;
 }
 
-/* HOME PAGE MENU */
-
-.projects a  {
-	background: url(../img/indexMID.png) 0 0;	
-	/*background: green;*/
+@media screen and (min-width: 700px) and (max-width: 1300px) and (min-height: 600px) {
+	body{
+		background: #fff;
+	}
+	.navigation{
+	width: 656px;
+	background: white;
+	}
+	.nav a{
+		height: 200px;
+		width: 200px;
+	}
 }
 
-.sounds a{
-	background: url(../img/indexMID.png) -233.3px 0;
+@media screen and (max-width: 700px) and (min-width: 520px) and (min-height: 350px){
+	body{
+		background: #eee;
+	}
+	.custom-menu a{
+		padding-top: 8px;
+	}
+	.navigation{
+	/*background: #a1a23f;*/
+	width: 506px;
+	}
+	.nav a{
+		height: 150px;
+		width: 150px;
+	}
 }
 
-.images a{
-	background: url(../img/indexMID.png) -466.4px 0;	
+@media screen and (max-width: 520px){
+	.custom-menu a{
+		padding-top: 8px;
+	}
+	.navigation{
+	/*background: #a162aa;*/
+	width: 336px;
+	}
+	.nav a{
+		height: 150px;
+		width: 150px;
+	}
 }
 
-.text a{
-	background: url(../img/indexMID.png) 0 233.3px;
+@media screen and (max-width: 330px){
+	.custom-menu a{
+		padding-top: 5px;
+	}
+	.navigation{
+	background: #a162db;
+	width: 316px;
+	}
+	.nav a{
+		height: 140px;
+		width: 140px;
+	}
 }
 
-.links a{
-	background: url(../img/indexMID.png) -233.3px 233.3px;
-}
 
-.contact a{
-	background: url(../img/indexMID.png) -466.6px 233.3px;
-}
 
-/* Projects PAGE MENU */
-
-.hearing a  {
-	background: url(../img/projects.png) 0 0;	
-}
-
-.peacelines a{
-	background: url(../img/projects.png) -233.3px 0;
-}
-
-.earmaps a{
-	background: url(../img/projects.png) -466.4px 0;	
-}
-
-.mamori a{
-	background: url(../img/projects.png) 0 233.3px;
-}
-
-.soundpoints a{
-	background: url(../img/projects.png) -233.3px 233.3px;
-}
-
-.concrete a{
-	background: url(../img/projects.png) -466.6px 233.3px;
-}
-
-/* Contact PAGE MENU */
-
-.resume a  {
-	background: url(../img/info.png) 0 0;	
-}
-
-.dummy1 a{
-	background: url(../img/info.png) -233.3px 0;
-}
-
-.bio a{
-	background: url(../img/info.png) -466.4px 0;	
-}
-
-.mail1 a{
-	background: url(../img/info.png) 0 233.3px;
-}
-
-.mail2 a{
-	background: url(../img/info.png) -233.3px 233.3px;
-}
-
-.mail3 a{
-	background: url(../img/info.png) -466.6px 233.3px;
-}

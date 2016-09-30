@@ -10,16 +10,18 @@ get_header(); ?>
 </header>
 <section class="homepage">
 	<div class="navigation">
-		<ul>
+		<ul class="menu-ul">
 		<?php
 			if($menu){
 				foreach($menu as $item){ ?>
 					<style>
 						#<?php echo $item['slug']; ?> a
-						{background: url('<?php echo $item["image"]["url"]; ?>'); }
+						{	background: url('<?php echo $item["image"]["url"]; ?>');
+							background-size: cover; }
 					</style>
 						<li class="custom-menu nav" id="<?php echo $item['slug']; ?>">
-							<a href="<?php echo $item['url']; ?>"><?php echo $item['name']; ?></a>
+							<a href="<?php echo $item['page']; ?>"><?php echo $item['name']; ?></a>
+							<!-- <div class="test"><?php echo $item['page']; ?></div> -->
 						</li>
 			<?php		}
 				}
