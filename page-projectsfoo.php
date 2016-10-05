@@ -1,9 +1,9 @@
 <?php
 /*
-Template Name: Projects Page 
+Template Name: Projectsasdfasdf Page 
  */
 get_header(); ?>
-<header>
+<!-- <header>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"> <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/sig_proj.png" alt="logo" class="logo"> 
 	</a>
 </header>
@@ -19,7 +19,7 @@ get_header(); ?>
 		?>
 	</div>
 
-</section>
+</section> -->
 
 
 

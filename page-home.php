@@ -2,7 +2,7 @@
 /*
 Template Name: Home Page 
  */
-// $menu = get_field('menu_item');
+
 get_header(); ?>
 <header>
 		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"> <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/dubline_sigSG.jpg" alt="logo" class="logo"> 

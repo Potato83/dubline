@@ -7,6 +7,27 @@ body{
 	height: 20px;
 }
 
+.white-space{
+	width: 100%;
+	height: 200px;
+}
+
+.go-back{
+	/*background: red;*/
+	padding: 20px;
+	text-align: center;
+	font-size: 20px;
+	
+}
+
+.go-back a{
+	color: black;
+}
+
+.go-back.img{
+	margin-top: 50px;
+}
+
 /* compensate (for working) */
 
 .logged-in header {
@@ -20,11 +41,18 @@ body{
 .main-container{
 	width: 100%;
 	height: 100vh;
+
+}
+
+.main-container.black{
+	background: black;
+	transition: background 0.25s;
 }
 
 .site-content{
 	width: 100%;
 	margin: 0;
+
 }
 
 .page .container{
@@ -141,6 +169,110 @@ body{
   left: 0;
 }
 
+
+
+/* Carousel */
+.carousel-container{
+	height: 100%;
+	width: 100%;
+}
+
+/*  query carousel width and img max h and max w */
+
+.carousel{
+  width: 80%;
+  margin: auto;
+  z-index: 600;
+  background: #000;
+}
+
+.carousel-inner > .item > img {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  max-width:1024px;
+  max-height:576px;
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.carousel-control.left { left: -120px; }
+.carousel-control.right { right: -120px; }
+
+.carousel .item{
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-inner > .item > a{
+	cursor: default;
+}
+
+.carousel-control.right,
+.carousel-control.left{
+	background: none;
+  z-index: 10;
+  width: 30px; 
+}
+
+.carousel-control,
+.carousel-control:active,
+.carousel-control:focus,
+.carousel-control:hover{
+	color: #aaa;
+	opacity: 1;
+	cursor: default;
+}
+
+.images{
+	background: black;
+	height: 100%;
+	width: 100vw;
+	margin-bottom: -200px;
+}
+
+.images,
+.images a{
+	color: #aaa;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px){
+	.carousel-control.left { left: 0px; }
+	.carousel-control.right { right: 0px; }
+	
+	.carousel{
+	  width: 90%;
+	}
+
+	.carousel-inner > .item > img {
+	  max-width:960px;
+	  max-height:540px;
+	}
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 700px) and (max-width: 1024px){
+	.carousel-control.left { left: 0px; }
+	.carousel-control.right { right: 0px; }
+	
+	.carousel{
+	  width: 90%;
+	}
+
+	.carousel-inner > .item > img {
+	  max-width:640px;
+	  max-height:360px;
+	}
+}
+
 @media screen and (min-width: 700px) and (max-width: 1300px) and (min-height: 600px) {
 	body{
 		background: #fff;
@@ -164,6 +296,19 @@ body{
 
 	.album-desc{
 		width: 200px;
+	}
+}
+
+@media screen and (max-width: 700px) and (min-width: 520px){
+	.carousel-control.left { left: -10px; }
+	.carousel-control.right { right: -10px; }
+	.carousel{
+	  width: 90%;
+	}
+
+	.carousel-inner > .item > img {
+	  max-width:500px;
+	  max-height:281px;
 	}
 }
 
@@ -193,7 +338,7 @@ body{
 
 	.album-desc{
 		width: 150px;
-	}
+	}	
 }
 
 @media screen and (max-width: 520px){
@@ -220,6 +365,16 @@ body{
 	.album-desc{
 		width: 150px;
 	}
+	.carousel-control.left { left: -10px; }
+	.carousel-control.right { right: -10px; }
+	.carousel{
+	  width: 90%;
+	}
+
+	.carousel-inner > .item > img {
+	  max-width:300px;
+	  max-height:169px;
+	}
 }
 
 @media screen and (max-width: 330px){
@@ -227,20 +382,33 @@ body{
 		padding-top: 5px;
 	}
 	.navigation{
-	background: #a162db;
-	width: 316px;
+	background: blue;
+	width: 320px;
+	/*margin: 0;*/
+	margin-left: -5px; /* shonky kluge */
 	}
 	.nav a{
-		height: 140px;
-		width: 140px;
+		height: 135px;
+		width: 135px;
 	}
 	.album{
-		height: 140px;
-		width: 140px;
+		height: 135px;
+		width: 135px;
 	}
 
 	.album-desc{
-		width: 140px;
+		width: 135px;
+	}
+	.carousel-control.left { left: -20px; }
+	.carousel-control.right { right: -20px; }
+
+	.carousel{
+	  width: 90%;
+	}
+
+	.carousel-inner > .item > img {
+	  max-width:300px;
+	  max-height:169px;
 	}
 }
 
@@ -253,7 +421,7 @@ body{
 /* Youtube */
 .videoWrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: 56.25%; 
 	padding-top: 25px;
 	height: 0;
 }
@@ -266,7 +434,6 @@ body{
 }
 
 .vid-desc{
-	/*background: green;*/
 	margin: 30px auto 40px;
 	padding: 15px;
 }
@@ -294,7 +461,6 @@ body{
 	height: 0;
 	width: 100%;
 	margin: 0 auto;
-	/*background: red;*/
 }
 
 .soundcloud iframe{
@@ -306,10 +472,16 @@ body{
 }
 
 .track-desc{
-	/*background: red;*/
 	margin: 20px auto;
 	padding: 10px;
 }
+
+
+
+
+
+
+
 
 
 

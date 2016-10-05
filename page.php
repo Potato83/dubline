@@ -44,7 +44,12 @@ $embed = get_field('embed');
 				<?php echo $embed; ?>
 			</div>
 	<?php	} ?> 
-	
+
+
+<div class="go-back">
+	<?php wps_parent_post(); ?>
+</div>
+
 </section>
 <div class="padder"></div>
 <?php get_footer(); ?>

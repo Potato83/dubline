@@ -13,6 +13,29 @@
 
 	</div><!-- #main-content -->
 </div><!-- .main-container -->
+<script>
+
+var pageName = '<?php echo basename( get_page_template() ); ?>';
+var back = '<?php echo esc_url( get_permalink( get_page_by_title( 'Images' ) ) ); ?>'
+$(function() {
+    if(pageName == "page-image.php"){
+    	console.log('image-page');
+    	$('.main-container').addClass("black");
+    	$( document ).on( 'keydown', function ( e ) {
+		    if ( e.keyCode === 27 ) { // ESC
+		      console.log('escape');
+		      window.location.href = back;	
+		  	}
+			});
+    } else{
+    	console.log("reg");
+    }
+});
+
+
+
+
+</script>
 
 
 
