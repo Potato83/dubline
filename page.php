@@ -5,10 +5,9 @@ $embed = get_field('embed');
 ?>
 
 <!-- <h1>page.php</h1> -->
-<header>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"> <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/dubline_sigSG.jpg" alt="logo" class="logo"> 
-	</a>
-</header>
+
+<?php get_template_part('content', 'banner'); ?>
+
 <section class="page container">
 
 	<h1 align="center"><?php echo the_title(); ?></h1>

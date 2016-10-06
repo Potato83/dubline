@@ -13,7 +13,10 @@ $menu = get_field('menu_item');
 							background-size: cover; }
 					</style>
 						<li class="custom-menu nav" id="<?php echo $item['slug']; ?>">
-							<a href="<?php echo $item['page']; ?>"><?php echo $item['name']; ?></a>							
+							<a href="<?php echo $item['page']; ?>"><?php echo $item['name']; ?></a>
+							<?php if($item['description_below']) { ?>
+							<div class="album-desc"><?php echo $item['description']; ?></div>	
+							<?php } ?>				
 						</li>
 			<?php		}
 				}

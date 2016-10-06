@@ -2,6 +2,23 @@ body{
 	overflow-x: hidden;
 	/*background: #000;*/
 }
+
+/* 404 */
+.not-found{
+	height: 50vh;
+	width: 50vw;
+	/*background: red;*/
+	text-align: center;
+	margin: 0 auto;
+	display: table;
+}
+
+.middle{
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 32px;
+}
+
 .padder{
 	width: 100%;
 	height: 20px;
@@ -31,7 +48,7 @@ body{
 /* compensate (for working) */
 
 .logged-in header {
-	margin-top: -32px;
+	/*margin-top: -32px;*/
 }
 
 .logo{

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Home Page 
+Template Name: Portfolio Page 
  */
 
 get_header(); ?>
