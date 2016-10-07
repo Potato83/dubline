@@ -3,22 +3,9 @@
 Template Name: Contact Page 
  */
 get_header(); ?>
-<header>
-		<a href="<?php echo esc_url( home_url( '/' ) ); ?>"> <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/sig_info.png" alt="logo" class="logo"> 
-	</a>
-</header>
+<?php get_template_part('content', 'banner'); ?>
 <section class="contact">
-	<div class="navigation">
-		<?php
-		wp_nav_menu( array(
-		  
-		  'theme_location'  => 'contact',                
-		  'container'     => 'ul',
-		  'menu_class'    => 'menu-ul'                
-		) );
-		?>
-	</div>
-
+	<?php get_template_part('content', 'menu'); ?>
 </section>
 
 

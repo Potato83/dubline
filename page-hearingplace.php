@@ -3,12 +3,13 @@
 Template Name: Hearing Place 
  */
 $menu = get_field('menu_item');
+$container = get_field('add_container');
 get_header(); ?>
 <header>
 		<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Hearing There' ) ) ); ?>"> <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/Hearing-there.png" alt="logo" class="logo"> 
 	</a>
 </header>
-<section class="page container">
+<section class="page container <?php if($container){echo "bg-container";}?>">
 	<h1 align="center"><?php echo the_title(); ?></h1>
 	<?php 
 	 
@@ -31,4 +32,7 @@ get_header(); ?>
 	<?php endwhile; ?>
 </section>
 
+<div class="go-back">
+	<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Map' ) ) ); ?>">Back</a>
+</div>
 <?php get_footer(); ?>

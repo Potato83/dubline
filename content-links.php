@@ -13,7 +13,7 @@ $links = get_field('links');
 							background-size: cover; }
 					</style>
 						<li class="custom-menu nav-link" id="<?php echo $linky['slug']; ?>">
-							<a href="<?php echo $linky['url']; ?>" target="_blank"><?php echo $linky['name']; ?></a>							
+							<a href="<?php echo $linky['url']; ?>" target="_blank"><span class="linky-text"><?php echo $linky['name']; ?></span></a>							
 						</li>
 			<?php		}
 				}

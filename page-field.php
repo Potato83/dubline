@@ -3,13 +3,24 @@
 Template Name: FieldRec Page 
 */
 $tracks = get_field('tracks'); 
+$no_title = get_field('hide_page_title');
+$container = get_field('add_container');
 get_header(); ?>
 
 <?php get_template_part('content', 'banner'); ?>
-<section class="page container">
+<section class="page container <?php if($container){echo "bg-container";}?>">
 
-	<h1 align="center"><?php echo the_title(); ?></h1>
+	<?php if(!$no_title){ ?>
+		<h1 align="center"><?php echo the_title(); ?></h1>
+	<?php }?>
 <div class="navigation">
+
+	<?php while ( have_posts() ) : the_post(); ?>
+						
+		<?php the_content(); ?>
+		
+	<?php endwhile; ?>
+
 		<ul class="menu-ul">
 		<?php
 			if($tracks){
@@ -27,7 +38,9 @@ get_header(); ?>
 		?>
 		</ul>
 	</div>
-
+		<div class="go-back">
+			<?php wps_parent_post(); ?>
+		</div>
 
 
 

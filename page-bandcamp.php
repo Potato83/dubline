@@ -3,12 +3,16 @@
 Template Name: Bandcamp Page 
 */
 $album = get_field('album'); 
+$no_title = get_field('hide_page_title');
+$container = get_field('add_container');
 get_header(); ?>
 
 <?php get_template_part('content', 'banner'); ?>
-<section class="page container">
+<section class="page container <?php if($container){echo "bg-container";}?>">
 
-	<h1 align="center"><?php echo the_title(); ?></h1>
+	<?php if(!$no_title){ ?>
+		<h1 align="center"><?php echo the_title(); ?></h1>
+	<?php }?>
 <div class="navigation">
 		<ul class="menu-ul">
 		<?php
@@ -27,49 +31,9 @@ get_header(); ?>
 		</ul>
 	</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<!--
-	<?php  if(has_post_thumbnail()){ ?>
-	<div class="center"><div class="page-feat">
-				
-	<?php
-		echo the_post_thumbnail( 'large');
-		echo '</div></div>';
-	} else{
-		echo '';
-	}
-  ?>
-
-	<?php while ( have_posts() ) : the_post(); ?>
-						
-		<?php the_content(); ?>
-		
-	<?php endwhile; ?>
-	-->
-
+<div class="go-back">		
+		<?php wps_parent_post(); ?>
+	</div>
 	
 	
 </section>
