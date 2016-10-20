@@ -30,9 +30,11 @@ get_header(); ?>
 		<?php the_content(); ?>
 		
 	<?php endwhile; ?>
-</section>
-
-<div class="go-back">
+	<div class="go-back">
 	<a href="<?php echo esc_url( get_permalink( get_page_by_title( 'Map' ) ) ); ?>">Back</a>
 </div>
+</section>
+<div class="padder"></div>
+<div class="padder"></div>
+
 <?php get_footer(); ?>

@@ -62,6 +62,7 @@ body{
 .bg-container{
 	background: #333;
 	color: #FBFBFB;
+	padding: 20px 30px;
 }
 
 .blog-container h1{
@@ -236,17 +237,30 @@ header{
 	margin-bottom: 5px;
 	padding: 5px;
 	overflow: hidden;
+	/*background: red;*/
+	position: relative;
+}
+
+.padbug{
+	/*background: blue;*/
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 10px;
+	margin: auto;
 }
 
 /* HEARING THERE */
 .page-thum{
-	text-align: center;
+	/*text-align: center;
 	margin: 0 8% 30px;
 	position: relative;
   width: 84%;
   padding-bottom: 60%;
   float: left;
-  height: 0;
+  height: 0;*/
+  margin-bottom: 30px;
 }
 
 .page-feat{
@@ -503,6 +517,12 @@ header{
 	.ht-links h2,
 	.ht-links h2 a{
 		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 390px){
+	.bg-container{
+		padding: 20px 15px;
 	}
 }
 

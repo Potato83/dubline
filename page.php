@@ -9,7 +9,7 @@ $container = get_field('add_container');
 <!-- <h1>page.php</h1> -->
 
 <?php get_template_part('content', 'banner'); ?>
-
+<div class="padder"></div>
 <section class="page container <?php if($container){echo "bg-container";}?>">
 	<?php if(!$no_title){ ?>
 		<h1 align="center"><?php echo the_title(); ?></h1>
@@ -54,5 +54,6 @@ $container = get_field('add_container');
 </div>
 
 </section>
+<div class="padder"></div>
 <div class="padder"></div>
 <?php get_footer(); ?>

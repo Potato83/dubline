@@ -22,7 +22,7 @@ get_header(); ?>
 						<li class="custom-menu nav">
 							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=<?php echo $item['album_id']; ?>/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" frameborder="0" class="album"></iframe>	
 							<div class="album-desc">
-								<?php echo $item['description']; ?></p>
+								<span class="padbug"><?php echo $item['description']; ?></span>
 							</div>
 						</li>
 			<?php		}
