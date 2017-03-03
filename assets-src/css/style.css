@@ -717,11 +717,17 @@ header{
 	.custom-menu a>span{
 		padding-top: 2px;
 	}
+	.menu-ul{
+		margin-left: -1rem; /* shonky */
+	}
 }
 
 @media screen and (max-width: 390px){
 	.bg-container{
 		padding: 20px 15px;
+	}
+	.menu-ul{
+		margin-left: -1rem; /* shonky */
 	}
 }
 
