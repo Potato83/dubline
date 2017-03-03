@@ -292,6 +292,10 @@ header{
 	transition: background 0.5s;
 }
 
+.inner-link:hover{
+	border: 3px solid black;
+}
+
 .inner.turquoise:hover
 {
 	background: rgba(0,249,249,0.6);
@@ -301,6 +305,7 @@ header{
 
 .inner-link.turquoise:hover{
 	background: rgba(0,249,249,0.6);
+
 }
 
 .inner.turquoise,

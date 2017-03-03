@@ -13,7 +13,7 @@ $menu = get_field('menu_item');
 							background-size: cover; }
 					
 					</style>
-					<h3>foo</h3>
+					
 						<li class="custom-menu nav" id="<?php echo $item['slug']; ?>">
 							<div class="inner <?php echo $item['hover_color'][0]; ?>">
 							<?php if($item['link_or_page'] == 'link') { ?>
