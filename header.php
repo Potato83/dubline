@@ -16,6 +16,9 @@
 <link rel="stylesheet" href="<?=get_template_directory_uri()?>/assets/css/style.min.css" />
 <link rel="stylesheet" href="<?=get_template_directory_uri()?>/assets/css/font-awesome/css/font-awesome.min.css" />
 <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=<?php the_field('font', 'option'); ?>" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed" rel="stylesheet"> -->
+
 <?php wp_head(); ?>
 <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
@@ -23,6 +26,19 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
+<style>
+	body, p{
+		font-family: "<?php the_field('font', 'option'); ?>", <?php the_field('font_fallback', 'option'); ?>;
+		font-size: <?php the_field('font_size', 'option'); ?>px;
+	}
+	.bg-container, .blog-container, .portfolio-container{
+		background: <?php the_field('background_color', 'option')?>; 
+		color: <?php the_field('text_color', 'option')?>; 
+	}
+	.back-color a{
+		color: <?php the_field('text_color', 'option')?>;
+	}
+</style>
 
 <body <?php body_class(); ?>>
 <div class="main-container">

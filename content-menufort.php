@@ -16,7 +16,7 @@ $menu = get_field('menu_item');
 						}	*/
 					</style>
 						<li class="custom-menu nav" id="<?php echo $item['slug']; ?>">
-							<div class="inner <?php echo $item['hover_color'][0]; ?>">
+							<div class="inner inner-fort <?php echo $item['hover_color'][0]; ?>">
 							<?php if($item['link_or_page'] == 'link') { ?>
 								<a href="<?php echo $item['linkypoo']; ?>" target="_blank"> 
 								<span>

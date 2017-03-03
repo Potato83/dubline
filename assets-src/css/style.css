@@ -51,17 +51,17 @@ body{
 }
 
 .blog-container{
-	background: #333;
+	/*background: #333;*/
 	padding: 20px 30px;
-	color: #FBFBFB;
+	/*color: #FBFBFB;*/
 	margin: 30px auto;
 	width: 75%;
 	max-width: 1024px;
 }
 
 .bg-container{
-	background: #333;
-	color: #FBFBFB;
+	/*background: #333;*/
+	/*color: #FBFBFB;*/
 	padding: 20px 30px;
 }
 
@@ -73,6 +73,20 @@ body{
 	margin: auto;
 }
 
+.portfolio-container{
+	width: 70%;
+	margin: 0 auto;
+	min-width: 700px;
+	max-width: 1024px;
+	padding-top: 20px;
+	height: 100%;
+}
+
+/*.portfolio-container.bandcamp > .navigation{
+	left: -100px;
+	position: relative;
+}
+*/
 .text{
 	/*background: red;*/
 	padding: 20px 0;
@@ -173,41 +187,62 @@ header{
 
 .custom-menu{
 	display: inline-block;
+	/*padding-top: 20px;*/
+	margin-bottom: 20px;
+	margin-right: 8px;
+	margin-left: 8px;
+	height: 233px;
+	width: 233px;
+	text-align: center;
 }
 
-.custom-menu a{
+.custom-menu-link{
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-right: 0px;
+	margin-left: 0px;
+	text-align: center;
+}
+
+.custom-menu a,
+.custom-menu-link a{
 	display: inline-block;
 	text-transform: lowercase;
 	font-size: 28px;
 	text-align: center;
 	font-family: 'Jim Nightshade', cursive;
-	padding-top: 20px;
+	
 	text-decoration: none;
 	color: black;
-	margin-bottom: 20px;
-	margin-right: 8px;
-	margin-left: 8px;
+	
+
 }
 
 .nav a{
-	height: 233px;
-	width: 233px;
-	transform: translateY(0);
-	transition: transform 0.25s;
+	/*height: 233px;
+	width: 233px;*/
+	/*transform: translateY(0);*/
+	/*transition: transform 0.25s;*/
+}
+
+.nav-link{
+	height: 131px;
+	width: 131px;
+	margin: 3px;
 }
 
 .nav-link a{
 	height: 131px;
 	width: 131px;
-	margin: 3px;
-	transform: translateY(0);
-	transition: transform 0.25s;
+	/*margin: 3px;*/
+	/*transform: translateY(0);*/
+	/*transition: transform 0.25s;*/
 }
 
 .nav a:hover,
 .nav-link a:hover {
-	transform: translateY(-5px);
-	transition: transform 0.25s;
+	/*transform: translateY(-5px);*/
+	/*transition: transform 0.25s;*/
 }
 
 .nav-link a > .linky-text{
@@ -222,6 +257,135 @@ header{
 
 }
 
+/* TESTING */
+
+.inner{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+
+	/*border-radius: 10px;*/
+	position: relative;
+	z-index: 2 !important;
+	padding: 50px;
+	top: 0;
+	left: 0;
+	transition: background 0.5s;
+}
+
+.inner-link{
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	/*box-sizing: border-box;*/
+	/*border-radius: 10px;*/
+	position: relative;
+	z-index: 2 !important;
+	/*padding: 50px;*/
+	top: 0;
+	left: 0;
+	transition: background 0.5s;
+}
+
+.inner:hover,
+.inner-link:hover{
+	transition: background 0.5s;
+}
+
+.inner.turquoise:hover
+{
+	background: rgba(0,249,249,0.6);
+	border: 5px solid black;
+}
+
+.inner-link.turquoise:hover{
+	background: rgba(0,249,249,0.6);
+}
+
+.inner.turquoise,
+.inner.yellow,
+.inner.rose,
+.inner.light.purple,
+.inner.brown,
+.inner.dark.purple{
+	border: 5px solid black;
+}
+
+.inner.yellow:hover{
+	background: rgba(255,255,71,0.6);
+	border: 5px solid black;
+}
+
+.inner-link.yellow:hover{
+	background: rgba(255,255,71,0.6);
+}
+
+.inner.rose:hover{
+	background: rgba(253,72,72,0.6);
+	border: 5px solid black;
+}
+
+.inner-link.rose:hover{
+	background: rgba(253,72,72,0.6);
+}
+
+.inner.light.purple:hover{
+	background: rgba(255,72,253,0.6);
+	border: 5px solid black;
+}
+
+.inner-link.light.purple:hover{
+	background: rgba(255,72,253,0.6);
+}
+
+.inner.brown:hover{
+	background: rgba(189,126,93,0.6);
+	border: 5px solid black;
+}
+
+.inner-link.brown:hover{
+	background: rgba(189,126,93,0.6);
+}
+
+.inner.dark.purple:hover{
+	background: rgba(180,72,255,0.6);
+	border: 5px solid black;
+}
+
+.inner-link.dark.purple:hover{
+	background: rgba(180,72,255,0.6);
+}
+
+.inner-fort{
+	border: none !important;
+}
+
+.custom-menu a{
+	/*position: relative !important;
+	z-index: 1 !important;
+	height: 100%;
+	width: 100%;*/
+	/*padding: 100%;*/
+}
+
+.custom-menu a:hover,
+.custom-menu-link a:hover{
+	opacity: 0.5;
+}
+
+.custom-menu a > span,
+.custom-menu-link a > span{
+	position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+	padding-top: 20px;
+  z-index: 1;
+}
+
+/* END TEST */
+
 /* BANDCAMP */
 
 .album{
@@ -234,11 +398,12 @@ header{
 	width: 233px;
 	height: 50px;
 	text-align: center;
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 	padding: 5px;
 	overflow: hidden;
 	/*background: red;*/
 	position: relative;
+	top: 15px;
 }
 
 .padbug{
@@ -382,6 +547,10 @@ header{
 	.blog-container{
 		width: 100%;
 	}
+	.portfolio-container{
+		width: 100%;
+		min-width: 100%;
+	}
 }
 
 
@@ -417,7 +586,11 @@ header{
 		width: 560px;
 		/*background: blue;*/
 	}
-	.nav a{
+	/*.nav a{
+		height: 200px;
+		width: 200px;
+	}*/
+	.custom-menu{
 		height: 200px;
 		width: 200px;
 	}
@@ -448,13 +621,17 @@ header{
 	.ht-links h2 a{
 		font-size: 24px;
 	}
+	.custom-menu a>span{
+		padding-top: 2px;
+	}
 }
 
 /* formerly and (min-height: 350px) */
 @media screen and (max-width: 700px) and (min-width: 520px){
 	
 	.custom-menu a{
-		padding-top: 8px;
+		padding-top: -18px;
+		margin-top: -20px;
 	}
 	.navigation{
 	/*background: #a1a23f;*/
@@ -464,7 +641,11 @@ header{
 		width: 420px;
 		/*background: green;*/
 	}
-	.nav a{
+	/*.nav a{
+		height: 150px;
+		width: 150px;
+	}*/
+	.custom-menu{
 		height: 150px;
 		width: 150px;
 	}
@@ -477,11 +658,15 @@ header{
 		width: 150px;
 		height: 80px;
 	}	
+	.custom-menu a>span{
+		padding-top: 5px;
+	}
 }
 
 @media screen and (max-width: 520px){
 	.custom-menu a{
 		padding-top: 8px;
+		margin-top: -20px;
 	}
 	.navigation{
 	/*background: #a162aa;*/
@@ -491,7 +676,11 @@ header{
 		width: 278px;
 		/*background: yellow;*/
 	}
-	.nav a{
+	/*.nav a{
+		height: 150px;
+		width: 150px;
+	}*/
+	.custom-menu{
 		height: 150px;
 		width: 150px;
 	}
@@ -518,6 +707,9 @@ header{
 	.ht-links h2 a{
 		font-size: 16px;
 	}
+	.custom-menu a>span{
+		padding-top: 2px;
+	}
 }
 
 @media screen and (max-width: 390px){
@@ -536,7 +728,11 @@ header{
 	/*margin: 0;*/
 	margin-left: -5px; /* shonky kluge */
 	}
-	.nav a{
+	/*.nav a{
+		height: 135px;
+		width: 135px;
+	}*/
+	.custom-menu{
 		height: 135px;
 		width: 135px;
 	}
@@ -596,7 +792,7 @@ header{
 	position: relative;
 	padding-bottom: 130px; 
 	padding-top: 25px;
-	height: 0;
+	/*height: 0;*/
 	width: 88%;
 	margin: 0 auto;
 }

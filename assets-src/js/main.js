@@ -6,6 +6,39 @@ $('#test').click(function(){
 	alert('Javascript and jQuery are working');
 });
 
+// Register keyboard events
+$(document).keydown(function(e) {
+	if (e.keyCode === 37) {
+	   // Previous
+	   $(".carousel-control.left").click();
+	   return false;
+	}
+	if (e.keyCode === 39) {
+	   // Next
+	   $(".carousel-control.right").click();
+	   return false;
+	}
+	if (e.keyCode === 27 ) {
+		 // ESC
+		 $("#img-back").click();
+		 return false;
+	}
+});
+
+$(document).ready(function(){
+      $("img").bind("contextmenu",function(e){
+        return false;
+      });
+    });
+
+
+
+
+
+
+
+
+
 
 
 

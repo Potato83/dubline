@@ -4,10 +4,22 @@ $bancamp = get_field('bandcamp');
 $embed = get_field('embed');
 $no_title = get_field('hide_page_title');
 $container = get_field('add_container');
+$color = get_field('color');
+$text_color = get_field('text_color');
 ?>
 
 <!-- <h1>page.php</h1> -->
-
+<?php if($container) { ?>
+<style>
+	.bg-container{
+		background: <?php echo $color; ?>;
+		color: <?php echo $text_color; ?>;
+	}
+	.back-color a{
+		color: <?php echo $text_color; ?>;
+	}
+</style>
+<?php } ?>
 <?php get_template_part('content', 'banner'); ?>
 <div class="padder"></div>
 <section class="page container <?php if($container){echo "bg-container";}?>">
@@ -49,7 +61,7 @@ $container = get_field('add_container');
 	<?php	} ?> 
 
 
-<div class="go-back">
+<div class="go-back back-color">
 	<?php wps_parent_post(); ?>
 </div>
 

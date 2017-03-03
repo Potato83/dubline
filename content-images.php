@@ -41,7 +41,7 @@ $images = get_field('gallery');
 
 	
 
-<div class="go-back img">
+<div class="go-back img" id="img-back">
 	
 
 	<?php wps_parent_post(); ?>

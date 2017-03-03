@@ -5,7 +5,21 @@ Template Name: Blog Page
 
 get_header(); 
 $blog_post = get_field('blog_post');
+$container = get_field('add_container');
+$color = get_field('color');
+$text_color = get_field('text_color');
 ?>
+<!-- <?php if($container) { ?> 
+<style>
+	.blog-container{
+		background: <?php echo $color; ?>;
+		color: <?php echo $text_color; ?>;
+	}
+	.back-color a{
+		color: <?php echo $text_color; ?>;
+	}
+</style>
+<?php } ?> -->
 <?php get_template_part('content', 'banner'); ?>
 <h1 align="center">PEACE LINES BELFAST</h1>
 <h4 align="center">LISTENING THROUGH THE WALLS</h4>
@@ -26,7 +40,7 @@ $blog_post = get_field('blog_post');
 <?php } ?>
 		
 
-		<div class="go-back">
+		<div class="go-back back-color">
 			<?php wps_parent_post(); ?>
 		</div>
 		

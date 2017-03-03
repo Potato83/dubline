@@ -8,18 +8,16 @@ $menu = get_field('menu_item');
 			if($menu){
 				foreach($menu as $item){ ?>
 					<style>
-						#<?php echo $item['slug']; ?> 
+						#<?php echo $item['slug']; ?> a
 						{	background: url('<?php echo $item["image"]["url"]; ?>');
 							background-size: cover; }
-						/*#<?php echo $item['slug']; ?> a:hover{
-							background: rgba(0,0,255,0.1);
-						}	*/
+						
+						}	
 					</style>
 						<li class="custom-menu nav" id="<?php echo $item['slug']; ?>">
-							<div class="inner <?php echo $item['hover_color'][0]; ?>">
+							
 							<?php if($item['link_or_page'] == 'link') { ?>
 								<a href="<?php echo $item['linkypoo']; ?>" target="_blank"> 
-								<span>
 								<?php if($item['name']){
 									echo $item['name'];
 								} else {
@@ -27,20 +25,18 @@ $menu = get_field('menu_item');
 								}
 							} else { ?>				
 								<a href="<?php echo $item['page']; ?>">
-								<span>
 								<?php if($item['name']){
 									echo $item['name'];
 								} else {
 									echo '&nbsp;';
 								}
-							}	?> 	
-								</span>		
+							}	?> 								
 								</a>
-							</div>
+
 							<?php if($item['description_below']) { ?>
 								<div class="album-desc"><span class="padbug"><?php echo $item['description']; ?></span></div>	
 							<?php } ?>			
-							
+								
 						</li>
 			<?php		}
 				}

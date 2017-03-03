@@ -101,13 +101,15 @@ function wps_parent_post(){
   global $post;
   if ($post->post_parent){
         $ancestors=get_post_ancestors($post->ID);
-        $root=count($ancestors)-1;
-        $parent = $ancestors[$root];
+        //$root=count($ancestors)-1;
+        //$parent = $ancestors[$root];
+        $parent = $ancestors[0];
   } else {
         $parent = $post->ID;
   }
   if($post->ID != $parent){
       echo '<a href="'.get_permalink($parent).'" class="parent-post">Back</a>';
+
   }
 }
 
@@ -116,6 +118,12 @@ function my_neat_body_class( $classes ) {
      if ( is_page(7) || is_category(5) || is_tag('neat') )
           $classes[] = 'neat-stuff';
      return $classes;
+}
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page('Fonts and Colors');
+	
 }
 
 
