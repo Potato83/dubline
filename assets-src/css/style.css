@@ -296,6 +296,7 @@ header{
 {
 	background: rgba(0,249,249,0.6);
 	border: 5px solid black;
+	/* this one */
 }
 
 .inner-link.turquoise:hover{
@@ -309,6 +310,7 @@ header{
 .inner.brown,
 .inner.dark.purple{
 	border: 5px solid black;
+	background: transparent;
 }
 
 .inner.yellow:hover{
@@ -370,7 +372,7 @@ header{
 
 .custom-menu a:hover,
 .custom-menu-link a:hover{
-	opacity: 0.5;
+	/*opacity: 0.5;*/
 }
 
 .custom-menu a > span,
