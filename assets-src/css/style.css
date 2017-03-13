@@ -6,7 +6,7 @@ body{
 #dublineslug a,
 #atslug a,
 #gmailslug a{
-	color: red;
+	color: blue;
 }
 
 .mejs-container{
@@ -179,6 +179,15 @@ header{
 	/*background: red;*/
 }
 
+.navigation{
+		width: 656px;
+		/*background: blue;*/
+	}
+	.navigation-links{
+		width: 560px;
+		/*background: blue;*/
+	}
+
 .menu-ul{
 	text-indent: 0;
 	padding: 0;
@@ -191,8 +200,8 @@ header{
 	margin-bottom: 20px;
 	margin-right: 8px;
 	margin-left: 8px;
-	height: 233px;
-	width: 233px;
+	height: 200px; /* changed */
+	width: 200px; /* changed */
 	text-align: center;
 }
 
@@ -270,7 +279,7 @@ header{
 	padding: 50px;
 	top: 0;
 	left: 0;
-	transition: background 0.5s;
+	transition: background 0.25s;
 }
 
 .inner-link{
@@ -278,18 +287,18 @@ header{
 	height: 100%;
 	width: 100%;
 	/*box-sizing: border-box;*/
-	/*border-radius: 10px;*/
+	/*border-radius: 100px;*/
 	position: relative;
 	z-index: 2 !important;
 	/*padding: 50px;*/
 	top: 0;
 	left: 0;
-	transition: background 0.5s;
+	transition: background 0.25s;
 }
 
 .inner:hover,
 .inner-link:hover{
-	transition: background 0.5s;
+	transition: background 0.25s;
 }
 
 .inner-link:hover{
@@ -298,13 +307,13 @@ header{
 
 .inner.turquoise:hover
 {
-	background: rgba(0,249,249,0.6);
+	background: rgba(0,249,249,0.2);
 	border: 5px solid black;
 	/* this one */
 }
 
 .inner-link.turquoise:hover{
-	background: rgba(0,249,249,0.6);
+	background: rgba(0,249,249,0.2);
 
 }
 
@@ -316,51 +325,52 @@ header{
 .inner.dark.purple{
 	border: 5px solid black;
 	background: transparent;
+	border-radius: 15px; /* edit here */
 }
 
 .inner.yellow:hover{
-	background: rgba(255,255,71,0.6);
+	background: rgba(255,255,71,0.2);
 	border: 5px solid black;
 }
 
 .inner-link.yellow:hover{
-	background: rgba(255,255,71,0.6);
+	background: rgba(255,255,71,0.2);
 }
 
 .inner.rose:hover{
-	background: rgba(253,72,72,0.6);
+	background: rgba(253,72,72,0.2);
 	border: 5px solid black;
 }
 
 .inner-link.rose:hover{
-	background: rgba(253,72,72,0.6);
+	background: rgba(253,72,72,0.2);
 }
 
 .inner.light.purple:hover{
-	background: rgba(255,72,253,0.6);
+	background: rgba(255,72,253,0.2);
 	border: 5px solid black;
 }
 
 .inner-link.light.purple:hover{
-	background: rgba(255,72,253,0.6);
+	background: rgba(255,72,253,0.2);
 }
 
 .inner.brown:hover{
-	background: rgba(189,126,93,0.6);
+	background: rgba(189,126,93,0.2);
 	border: 5px solid black;
 }
 
 .inner-link.brown:hover{
-	background: rgba(189,126,93,0.6);
+	background: rgba(189,126,93,0.2);
 }
 
 .inner.dark.purple:hover{
-	background: rgba(180,72,255,0.6);
+	background: rgba(180,72,255,0.2);
 	border: 5px solid black;
 }
 
 .inner-link.dark.purple:hover{
-	background: rgba(180,72,255,0.6);
+	background: rgba(180,72,255,0.2);
 }
 
 .inner-fort{
@@ -717,8 +727,9 @@ header{
 	.custom-menu a>span{
 		padding-top: 2px;
 	}
-	.menu-ul{
-		margin-left: -1rem; /* shonky */
+	/* shonky */
+	.menu-ul.special-bandcamp{
+		margin-left: -1rem; 
 	}
 }
 
@@ -726,8 +737,9 @@ header{
 	.bg-container{
 		padding: 20px 15px;
 	}
-	.menu-ul{
-		margin-left: -1rem; /* shonky */
+	/* shonky */
+	.menu-ul.special-bandcamp{
+		margin-left: -1rem; 
 	}
 }
 

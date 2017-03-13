@@ -27,7 +27,7 @@ get_header(); ?>
 		<h1 align="center"><?php echo the_title(); ?></h1>
 	<?php }?>
 <div class="navigation">
-		<ul class="menu-ul">
+		<ul class="menu-ul special-bandcamp">
 		<?php
 			if($album){
 				foreach($album as $item){ ?>

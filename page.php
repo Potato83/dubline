@@ -1,4 +1,4 @@
-<?php get_header(); 
+	<?php get_header(); 
 $custom_text = get_field('text_above');
 $bancamp = get_field('bandcamp');
 $embed = get_field('embed');
@@ -6,6 +6,8 @@ $no_title = get_field('hide_page_title');
 $container = get_field('add_container');
 $color = get_field('color');
 $text_color = get_field('text_color');
+$add_more = get_field('add_more');
+$more_vids = get_field('more_vids');
 ?>
 
 <!-- <h1>page.php</h1> -->
@@ -59,6 +61,27 @@ $text_color = get_field('text_color');
 				<?php echo $embed; ?>
 			</div>
 	<?php	} ?> 
+
+	<!-- video extra / repeater -->
+	<?php 
+		if($add_more == true){
+			if($more_vids){
+				foreach ($more_vids as $vid) { ?>
+					<div class="padder"></div>
+					<div class="custom-text">
+						<?php echo $vid['more_content']; ?>
+					</div>
+					<div class="padder"></div>
+					<div class="videoWrapper">
+						<?php echo $vid['next_embed']; ?>
+					</div>
+				<?php }
+			}
+		}else{
+			echo '';
+		}
+
+	?>
 
 
 <div class="go-back back-color">

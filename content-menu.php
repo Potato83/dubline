@@ -24,14 +24,18 @@ $menu = get_field('menu_item');
 								} else {
 									echo '&nbsp;';
 								}
-							} else { ?>				
+							} else if ($item['link_or_page'] == 'page'){ ?>				
 								<a href="<?php echo $item['page']; ?>">
 								<span>
 								<?php if($item['name']){
 									echo $item['name'];
 								} else {
 									echo '&nbsp;';
-								}
+								} 
+								}else { ?> <!-- email -->
+									<a href="<?php echo 'mailto:' . $item['email']; ?>" target="_blank">
+									<span>
+									<?php echo $item['name'];
 							}	?> 	
 								</span>		
 								</a>
