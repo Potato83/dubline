@@ -26,13 +26,13 @@ get_header(); ?>
 	<?php if(!$no_title){ ?>
 		<h1 align="center"><?php echo the_title(); ?></h1>
 	<?php }?>
-<div class="navigation">
+<div class="navigation porto">
 		<ul class="menu-ul special-bandcamp">
 		<?php
 			if($album){
 				foreach($album as $item){ ?>
 	
-						<li class="custom-menu nav">
+						<li class="custom-menu nav port">
 							<iframe src="https://bandcamp.com/EmbeddedPlayer/album=<?php echo $item['album_id']; ?>/size=large/bgcol=ffffff/linkcol=0687f5/minimal=true/transparent=true/" frameborder="0" class="album"></iframe>	
 							<div class="album-desc">
 								<span class="padbug"><?php echo $item['description']; ?></span>

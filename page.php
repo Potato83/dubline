@@ -68,7 +68,7 @@ $more_vids = get_field('more_vids');
 			if($more_vids){
 				foreach ($more_vids as $vid) { ?>
 					<div class="padder"></div>
-					<div class="custom-text">
+					<div>
 						<?php echo $vid['more_content']; ?>
 					</div>
 					<div class="padder"></div>

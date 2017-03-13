@@ -161,7 +161,7 @@ header{
 	max-width: 810px;
 }
 
-.navigation{
+.navigation.porto, .navigation{
 	width: 755px;
 	margin: 30px auto 0;
 	position: relative;
@@ -183,10 +183,10 @@ header{
 		width: 656px;
 		/*background: blue;*/
 	}
-	.navigation-links{
+	/*.navigation-links{
 		width: 560px;
-		/*background: blue;*/
-	}
+		
+	}*/
 
 .menu-ul{
 	text-indent: 0;
@@ -203,6 +203,11 @@ header{
 	height: 200px; /* changed */
 	width: 200px; /* changed */
 	text-align: center;
+}
+
+.custom-menu.port{
+	height: 233px; 
+	width: 233px; 
 }
 
 .custom-menu-link{
@@ -322,10 +327,16 @@ header{
 .inner.rose,
 .inner.light.purple,
 .inner.brown,
-.inner.dark.purple{
+.inner.dark.purple,
+.inner.transparent{
 	border: 5px solid black;
 	background: transparent;
-	border-radius: 15px; /* edit here */
+	border-radius: 10px; /* edit here */
+}
+
+.inner.transparent:hover{
+	background: transparent;
+	border: 5px solid black;
 }
 
 .inner.yellow:hover{
@@ -595,7 +606,7 @@ header{
 	body{
 		background: #fff;
 	}
-	.navigation{
+	.navigation, .navigation.porto{
 		width: 656px;
 		/*background: blue;*/
 	}
@@ -607,7 +618,7 @@ header{
 		height: 200px;
 		width: 200px;
 	}*/
-	.custom-menu{
+	.custom-menu, .custom-menu.port{
 		height: 200px;
 		width: 200px;
 	}
@@ -650,7 +661,7 @@ header{
 		padding-top: -18px;
 		margin-top: -20px;
 	}
-	.navigation{
+	.navigation, .navigation.porto{
 	/*background: #a1a23f;*/
 	width: 506px;
 	}
@@ -662,7 +673,7 @@ header{
 		height: 150px;
 		width: 150px;
 	}*/
-	.custom-menu{
+	.custom-menu, .custom-menu.port{
 		height: 150px;
 		width: 150px;
 	}
@@ -685,7 +696,7 @@ header{
 		padding-top: 8px;
 		margin-top: -20px;
 	}
-	.navigation{
+	.navigation, .navigation.porto{
 	/*background: #a162aa;*/
 	width: 336px;
 	}
@@ -697,7 +708,7 @@ header{
 		height: 150px;
 		width: 150px;
 	}*/
-	.custom-menu{
+	.custom-menu, .custom-menu.port{
 		height: 150px;
 		width: 150px;
 	}
@@ -747,7 +758,7 @@ header{
 	.custom-menu a{
 		padding-top: 5px;
 	}
-	.navigation{
+	.navigation, .navigation.porto{
 	/*background: blue;*/
 	width: 320px;
 	/*margin: 0;*/
@@ -757,7 +768,7 @@ header{
 		height: 135px;
 		width: 135px;
 	}*/
-	.custom-menu{
+	.custom-menu, .custom-menu.port{
 		height: 135px;
 		width: 135px;
 	}
