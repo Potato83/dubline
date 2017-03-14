@@ -862,6 +862,15 @@ header{
 	padding: 10px;
 }
 
+/* fix wp uploaded images to be responsive */
+
+.container > p > img,
+.container > div > div > p > img,
+.container > div > p > img{
+	max-width: 100%;
+	height: auto;
+}
+
 
 
 
