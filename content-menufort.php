@@ -38,7 +38,7 @@ $menu = get_field('menu_item');
 								</a>
 							</div>
 							<?php if($item['description_below']) { ?>
-								<div class="album-desc"><span class="padbug"><?php echo $item['description']; ?></span></div>	
+								<div class="album-desc"><span class="no-padbug"><?php echo $item['description']; ?></span></div>	
 							<?php } ?>			
 							
 						</li>

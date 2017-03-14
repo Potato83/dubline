@@ -5,8 +5,9 @@ body{
 
 #dublineslug a,
 #atslug a,
-#gmailslug a{
-	color: blue;
+#gmailslug a,
+a{
+	color: red;
 }
 
 .mejs-container{
@@ -180,7 +181,7 @@ header{
 }
 
 .navigation{
-		width: 656px;
+		width: 596px; /* changed from 656 */
 		/*background: blue;*/
 	}
 	/*.navigation-links{
@@ -200,8 +201,8 @@ header{
 	margin-bottom: 20px;
 	margin-right: 8px;
 	margin-left: 8px;
-	height: 200px; /* changed */
-	width: 200px; /* changed */
+	height: 180px; /* changed */
+	width: 180px; /* changed */
 	text-align: center;
 }
 
@@ -607,7 +608,7 @@ header{
 		background: #fff;
 	}
 	.navigation, .navigation.porto{
-		width: 656px;
+		width: 596px;
 		/*background: blue;*/
 	}
 	.navigation-links{
@@ -619,17 +620,17 @@ header{
 		width: 200px;
 	}*/
 	.custom-menu, .custom-menu.port{
-		height: 200px;
-		width: 200px;
+		height: 180px;
+		width: 180px;
 	}
 	.album{
-		height: 200px;
-		width: 200px;
+		height: 180px;
+		width: 180px;
 	}
 
 	.album-desc{
-		width: 200px;
-		height: 60px;
+		width: 180px;
+		height: 40px;
 	}
 	
 }
@@ -869,6 +870,15 @@ header{
 .container > div > p > img{
 	max-width: 100%;
 	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.centerme,
+.centerme{
+	margin-left: auto !important;
+	margin-right: auto !important;
+	text-align: center;
 }
 
 
