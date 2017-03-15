@@ -181,7 +181,7 @@ header{
 }
 
 .navigation{
-		width: 596px; /* changed from 656 */
+		width: 506px; /* changed from 656 */
 		/*background: blue;*/
 	}
 	/*.navigation-links{
@@ -201,8 +201,8 @@ header{
 	margin-bottom: 20px;
 	margin-right: 8px;
 	margin-left: 8px;
-	height: 180px; /* changed */
-	width: 180px; /* changed */
+	height: 150px; /* changed */
+	width: 150px; /* changed */
 	text-align: center;
 }
 
@@ -223,10 +223,9 @@ header{
 .custom-menu-link a{
 	display: inline-block;
 	text-transform: lowercase;
-	font-size: 28px;
+	font-size: 24px;
 	text-align: center;
 	font-family: 'Jim Nightshade', cursive;
-	
 	text-decoration: none;
 	color: black;
 	
@@ -409,7 +408,7 @@ header{
   height:100%;
   top:0;
   left: 0;
-	padding-top: 20px;
+	padding-top: 7px;
   z-index: 1;
 }
 
@@ -608,7 +607,7 @@ header{
 		background: #fff;
 	}
 	.navigation, .navigation.porto{
-		width: 596px;
+		width: 506px;
 		/*background: blue;*/
 	}
 	.navigation-links{
@@ -620,17 +619,17 @@ header{
 		width: 200px;
 	}*/
 	.custom-menu, .custom-menu.port{
-		height: 180px;
-		width: 180px;
+		height: 150px;
+		width: 150px;
 	}
 	.album{
-		height: 180px;
-		width: 180px;
+		height: 150px;
+		width: 150px;
 	}
 
 	.album-desc{
-		width: 180px;
-		height: 40px;
+		width: 150px;
+		height: 30px;
 	}
 	
 }

@@ -108,7 +108,7 @@ function wps_parent_post(){
         $parent = $post->ID;
   }
   if($post->ID != $parent){
-      echo '<a href="'.get_permalink($parent).'" class="parent-post">Back</a>';
+      echo '<a href="'.get_permalink($parent).'" class="parent-post"><strong>BACK</strong></a>';
 
   }
 }

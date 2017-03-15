@@ -8,6 +8,8 @@ $color = get_field('color');
 $text_color = get_field('text_color');
 $add_more = get_field('add_more');
 $more_vids = get_field('more_vids');
+$margin = get_field('margin');
+$margin_top = get_field('margin_top');
 ?>
 
 <!-- <h1>page.php</h1> -->
@@ -22,9 +24,24 @@ $more_vids = get_field('more_vids');
 	}
 </style>
 <?php } ?>
+
+<?php if($margin) { ?>
+	<style>
+	@media (min-width: 767px){
+		.custom-margin {
+				padding-left: <?php echo $margin . 'px'; ?>;
+				padding-right: <?php echo $margin . 'px'; ?>;
+			}
+		}		
+		.custom-margin {
+				padding-top: <?php echo $margin_top . 'px'; ?>;
+			}
+	</style>
+<?php } ?>
+
 <?php get_template_part('content', 'banner'); ?>
 <div class="padder"></div>
-<section class="page container <?php if($container){echo "bg-container";}?>">
+<section class="page container<?php if($container){echo "bg-container";}?>">
 	<?php if(!$no_title){ ?>
 		<h1 align="center"><?php echo the_title(); ?></h1>
 	<?php }?>
@@ -46,12 +63,14 @@ $more_vids = get_field('more_vids');
 	}
   ?>
 
+	<div class="custom-margin">
+
 	<?php while ( have_posts() ) : the_post(); ?>
 						
 		<?php the_content(); ?>
 		
 	<?php endwhile; ?>
-
+	</div>
 
 	<!-- video embed -->
 	<?php
