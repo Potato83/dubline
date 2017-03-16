@@ -41,7 +41,7 @@ $margin_top = get_field('margin_top');
 
 <?php get_template_part('content', 'banner'); ?>
 <div class="padder"></div>
-<section class="page container<?php if($container){echo "bg-container";}?>">
+<section class="page container<?php if($container){echo " bg-container";}?>">
 	<?php if(!$no_title){ ?>
 		<h1 align="center"><?php echo the_title(); ?></h1>
 	<?php }?>
