@@ -779,6 +779,8 @@ header{
 	.custom-menu, .custom-menu.port{
 		height: 135px;
 		width: 135px;
+		clear: both; /* fix for ios? */
+		/*background: green !important;*/
 	}
 	.album{
 		height: 135px;
@@ -788,6 +790,7 @@ header{
 	.album-desc{
 		width: 135px;
 		height: 90px;
+
 	}
 	.carousel-control.left { left: -20px; }
 	.carousel-control.right { right: -20px; }
