@@ -760,9 +760,10 @@ header{
 	}
 	.navigation, .navigation.porto{
 	/*background: blue;*/
-	width: 320px;
+	/*width: 320px;*/
+	width: 100%;
 	/*margin: 0 auto;*/
-	text-align: center;
+	/*text-align: center;*/
 	/*margin: 0;*/
 	/*margin-left: -5px; */
 	/* shonky kluge */
