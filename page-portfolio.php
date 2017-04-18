@@ -19,6 +19,7 @@ $text_color = get_field('text_color');
 	}
 </style>
 <?php } ?>
+
 <?php get_template_part('content', 'banner'); ?>
 <section class="page <?php if($container){echo "portfolio-container bandcamp";}?>">
 	<?php get_template_part('content', 'menufort'); ?>

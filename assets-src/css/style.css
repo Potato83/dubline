@@ -761,13 +761,20 @@ header{
 	.navigation, .navigation.porto{
 	/*background: blue;*/
 	width: 320px;
+	/*margin: 0 auto;*/
+	text-align: center;
 	/*margin: 0;*/
-	margin-left: -5px; /* shonky kluge */
+	/*margin-left: -5px; */
+	/* shonky kluge */
 	}
 	/*.nav a{
 		height: 135px;
 		width: 135px;
 	}*/
+	.portfolio-container{
+		width: 100%;
+	}
+
 	.custom-menu, .custom-menu.port{
 		height: 135px;
 		width: 135px;
