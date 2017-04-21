@@ -614,22 +614,32 @@ header{
 		width: 560px;
 		/*background: blue;*/
 	}
-	/*.nav a{
-		height: 200px;
-		width: 200px;
-	}*/
+
 	.custom-menu, .custom-menu.port{
 		height: 150px;
 		width: 150px;
+		clear: both;		
 	}
+
+	.custom-menu.port{
+		margin-bottom: 100px; /* iOs fix */
+	}
+	
 	.album{
 		height: 150px;
 		width: 150px;
+		position: relative;
+	}
+
+	.inner.inner-fort{
+		height: 150px;
+		position: relative;
+		display: block;
 	}
 
 	.album-desc{
 		width: 150px;
-		height: 30px;
+		height: 80px;
 	}
 	
 }
@@ -759,19 +769,9 @@ header{
 		padding-top: 5px;
 	}
 	.navigation, .navigation.porto{
-	/*background: blue;*/
-	/*width: 320px;*/
 	width: 100%;
-	/*margin: 0 auto;*/
 	text-align: center;
-	/*margin: 0;*/
-	/*margin-left: -5px; */
-	/* shonky kluge */
 	}
-	/*.nav a{
-		height: 135px;
-		width: 135px;
-	}*/
 	.portfolio-container{
 		width: 100%;
 	}
@@ -780,7 +780,7 @@ header{
 		height: 135px;
 		width: 135px;
 		clear: both; /* fix for ios? */
-		/*background: green !important;*/
+
 	}
 	.album{
 		height: 135px;

@@ -15,7 +15,7 @@ $menu = get_field('menu_item');
 							background: rgba(0,0,255,0.1);
 						}	*/
 					</style>
-
+						
 						<li class="custom-menu nav port" id="<?php echo $item['slug']; ?>">
 							<div class="inner inner-fort <?php echo $item['hover_color'][0]; ?>">
 							<?php if($item['link_or_page'] == 'link') { ?>
@@ -44,6 +44,7 @@ $menu = get_field('menu_item');
 							<?php } ?>			
 							
 						</li>
+
 			<?php		}
 				}
 		?>
